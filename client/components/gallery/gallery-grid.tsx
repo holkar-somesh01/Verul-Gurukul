@@ -10,16 +10,15 @@ import { fadeIn, staggerContainer, imageHover } from '@/lib/utils/animations';
 export const GalleryGrid = () => {
   const { t } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  
+
   // Filter images based on selected category
-  const filteredImages = selectedCategory 
+  const filteredImages = selectedCategory
     ? GALLERY_IMAGES.filter(image => image.category === selectedCategory)
     : GALLERY_IMAGES;
 
   return (
     <div className="py-12">
       <div className="container mx-auto px-4">
-        {/* Category Filters */}
         <div className="flex flex-wrap justify-center gap-2 mb-8">
           <Button
             variant={selectedCategory === null ? "default" : "outline"}
@@ -28,7 +27,6 @@ export const GalleryGrid = () => {
           >
             All
           </Button>
-          
           {GALLERY_CATEGORIES.map(category => (
             <Button
               key={category}
@@ -40,8 +38,6 @@ export const GalleryGrid = () => {
             </Button>
           ))}
         </div>
-        
-        {/* Gallery Grid */}
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -68,13 +64,13 @@ export const GalleryGrid = () => {
             </motion.div>
           ))}
         </motion.div>
-        
+
         {/* Load More Button (for demonstration) */}
-        <div className="mt-10 text-center">
+        {/* <div className="mt-10 text-center">
           <Button variant="outline">
             {t('gallery.loadMore')}
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

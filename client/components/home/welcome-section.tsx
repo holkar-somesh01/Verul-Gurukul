@@ -7,9 +7,9 @@ import { SectionHeading } from '../ui/section-heading';
 
 export const WelcomeSection = () => {
   const { t } = useLanguage();
-  
+
   return (
-    <section className="py-16 md:py-24 bg-white dark:bg-gray-900">
+    <section className="py-16 md:py-24 bg-white overflow-hidden dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.div
           variants={staggerContainer}
@@ -17,19 +17,19 @@ export const WelcomeSection = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.25 }}
         >
-          <SectionHeading 
-            title={t('home.welcome.title')} 
+          <SectionHeading
+            title={t('home.welcome.title')}
             subtitle={t('home.welcome.description')}
           />
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div 
+            <motion.div
               variants={fadeIn('right')}
               className="relative rounded-lg overflow-hidden aspect-video"
             >
-              <img 
-                src="/images/MadhyamikGurukul.jpg" 
-                alt="School Building" 
+              <img
+                src="/images/MadhyamikGurukul.jpg"
+                alt="School Building"
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -39,10 +39,10 @@ export const WelcomeSection = () => {
               <p className="mb-6 text-muted-foreground">
                 {t('home.mission.description')}
               </p>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {['item1', 'item2', 'item3', 'item4'].map((item, index) => (
-                  <motion.div 
+                  <motion.div
                     key={item}
                     variants={fadeIn('up', 0.1 * index)}
                     className="flex items-start space-x-2"

@@ -9,7 +9,7 @@ export default {
     gallery: 'गॅलरी',
     contact: 'संपर्क',
   },
-  
+
   // Home Page
   home: {
     hero: {
@@ -42,7 +42,7 @@ export default {
       item6: 'आरामदायक वसतिगृह निवास',
     },
   },
-  
+
   // About Page
   about: {
     title: 'आमच्या शाळेबद्दल',
@@ -64,7 +64,7 @@ export default {
       message: 'शिक्षण केवळ शैक्षणिक नसून चारित्र्य घडवण्याबद्दल आणि अशी मूल्ये रुजवण्याबद्दल आहे जी विद्यार्थ्यांना चांगले माणूस बनण्यात आणि समाजाला सकारात्मकरित्या योगदान देण्यात मदत करतात.',
     },
   },
-  
+
   // Departments
   departments: {
     rifleShooting: {
@@ -98,7 +98,7 @@ export default {
       additionalInfo: 'आमची वसतिगृहे शिस्त आणि शैक्षणिक लक्ष ठेवून घरासारखे वातावरण तयार करण्यावर लक्ष केंद्रित करतात.',
     },
   },
-  
+
   // Gallery
   gallery: {
     title: 'शाळा गॅलरी',
@@ -107,10 +107,11 @@ export default {
       assemblies: 'सभा',
       staff: 'कर्मचारी',
       campus: 'परिसर',
+      function: "कार्य"
     },
     loadMore: 'अधिक पहा',
   },
-  
+
   // Contact
   contact: {
     title: 'संपर्क करा',
@@ -142,7 +143,7 @@ export default {
     },
     map: 'नकाशावर आम्हाला शोधा',
   },
-  
+
   // Common
   common: {
     readMore: 'अधिक वाचा',
@@ -154,7 +155,7 @@ export default {
     darkMode: 'डार्क मोड',
     lightMode: 'लाईट मोड',
   },
-  
+
   // Footer
   footer: {
     about: 'शाळेबद्दल',

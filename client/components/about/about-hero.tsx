@@ -10,17 +10,17 @@ export const AboutHero = () => {
   return (
     <section className="relative h-[40vh] md:h-[50vh] overflow-hidden bg-gray-900">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 z-0 bg-cover bg-center opacity-40"
-        style={{ backgroundImage: `url('/images/MadhyamikGurukul.jpg')` }}
+        style={{ backgroundImage: `url('https://res.cloudinary.com/dmolheokh/image/upload/v1749202581/MadhyamikGurukul_etqdhw.jpg')` }}
       />
-      
+
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/50 z-10" />
-      
+      {/* <div className="absolute inset-0 bg-black/50 z-10" /> */}
+
       {/* Content */}
       <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
-        <motion.h1 
+        <motion.h1
           variants={fadeIn('up')}
           initial="hidden"
           animate="visible"
