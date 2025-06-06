@@ -24,7 +24,7 @@ export const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -39,19 +39,19 @@ export const Header = () => {
   };
 
   return (
-    <header 
+    <header
       className={cn(
         'fixed top-0 w-full z-50 transition-all duration-300',
-        isScrolled 
-          ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-md py-2' 
+        "bg-cover bg-center",
+        isScrolled
+          ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-md py-2'
           : 'bg-transparent py-4'
       )}
-    >
-      <div className="container mx-auto px-4">
+    >      <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
@@ -65,7 +65,7 @@ export const Header = () => {
           <nav className="hidden md:flex items-center space-x-6">
             {NAVIGATION_LINKS.map((link) => (
               <div key={link.key} className="relative group">
-                <Link 
+                <Link
                   href={link.href}
                   className={cn(
                     "text-sm font-medium transition-colors hover:text-primary",
@@ -78,8 +78,8 @@ export const Header = () => {
                   <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                     <div className="py-1">
                       {link.children.map((child) => (
-                        <Link 
-                          key={child.key} 
+                        <Link
+                          key={child.key}
                           href={child.href}
                           className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
                         >
@@ -96,9 +96,9 @@ export const Header = () => {
           {/* Right side controls */}
           <div className="flex items-center space-x-4">
             <LanguageSwitcher />
-            
-            <Button 
-              variant="ghost" 
+
+            <Button
+              variant="ghost"
               size="icon"
               onClick={toggleTheme}
               aria-label={theme === 'dark' ? t('common.lightMode') : t('common.darkMode')}
@@ -133,7 +133,7 @@ export const Header = () => {
               <nav className="flex flex-col space-y-4">
                 {NAVIGATION_LINKS.map((link) => (
                   <div key={link.key}>
-                    <Link 
+                    <Link
                       href={link.href}
                       className={cn(
                         "block py-2 text-base font-medium transition-colors hover:text-primary",
@@ -148,8 +148,8 @@ export const Header = () => {
                     {link.children && (
                       <div className="pl-6 mt-1 space-y-1">
                         {link.children.map((child) => (
-                          <Link 
-                            key={child.key} 
+                          <Link
+                            key={child.key}
                             href={child.href}
                             className={cn(
                               "block py-1 text-sm transition-colors hover:text-primary",

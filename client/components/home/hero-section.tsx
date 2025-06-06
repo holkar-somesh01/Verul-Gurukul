@@ -19,7 +19,7 @@ export const HeroSection = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -28,23 +28,23 @@ export const HeroSection = () => {
   return (
     <section className="relative h-screen overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       {/* Parallax Background */}
-      <div 
-        className="absolute inset-0 z-0 opacity-40"
-        style={{ 
-          backgroundImage: `url('/images/MadhyamikGurukul.jpg')`,
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `url('https://res.cloudinary.com/dmolheokh/image/upload/v1749202581/MadhyamikGurukul_etqdhw.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          transform: `translateY(${offset * 0.5}px)`,
+          // transform: `translateY(${offset * 0.5}px)`,
         }}
       />
-      
+
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60 z-10" />
-      
+      <div className="absolute inset-0 z-10" />
+
       {/* Content */}
       <div className="container relative z-20 mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
-        <motion.h1 
-          className="text-4xl md:text-6xl font-bold mb-6 max-w-4xl"
+        <motion.h1
+          className="text-4xl text-orange-600 md:text-6xl font-bold mb-6 max-w-4xl"
           variants={fadeIn('up')}
           initial="hidden"
           animate="visible"
@@ -53,7 +53,7 @@ export const HeroSection = () => {
           {t('home.hero.title')}
         </motion.h1>
 
-        <motion.p 
+        <motion.p
           className="text-xl md:text-2xl max-w-2xl mb-8 text-gray-200"
           variants={fadeIn('up')}
           initial="hidden"
@@ -62,7 +62,7 @@ export const HeroSection = () => {
         >
           {t('home.hero.subtitle')}
         </motion.p>
-        
+
         <motion.div
           variants={fadeIn('up')}
           initial="hidden"
@@ -79,13 +79,13 @@ export const HeroSection = () => {
       </div>
 
       {/* Animated scroll indicator */}
-      <motion.div 
+      <motion.div
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         animate={{ y: [0, 12, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
         <div className="w-8 h-12 border-2 border-white rounded-full flex justify-center">
-          <motion.div 
+          <motion.div
             className="w-1.5 h-3 bg-white rounded-full mt-2"
             animate={{ y: [0, 15, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
