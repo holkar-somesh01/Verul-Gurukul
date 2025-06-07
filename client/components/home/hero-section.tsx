@@ -161,11 +161,20 @@ export const HeroSection = () => {
     <section className="relative h-screen overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       {/* Parallax Background */}
       <div
+
         className="absolute inset-0 z-0 transition-all duration-500"
         style={{
           backgroundImage: `url(${images[currentIndex]})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `url('https://res.cloudinary.com/dmolheokh/image/upload/v1749202581/MadhyamikGurukul_etqdhw.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          // transform: `translateY(${offset * 0.5}px)`,
+
         }}
       />
 
@@ -193,6 +202,7 @@ export const HeroSection = () => {
         >
           {t('home.hero.subtitle')}
         </motion.p>
+
         <motion.div
           variants={fadeIn('up')}
           initial="hidden"

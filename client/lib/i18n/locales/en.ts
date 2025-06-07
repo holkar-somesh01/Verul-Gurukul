@@ -9,7 +9,7 @@ export default {
     gallery: 'Gallery',
     contact: 'Contact',
   },
-  
+
   // Home Page
   home: {
     hero: {
@@ -42,7 +42,7 @@ export default {
       item6: 'Comfortable Hostel Accommodation',
     },
   },
-  
+
   // About Page
   about: {
     title: 'About Our School',
@@ -64,7 +64,7 @@ export default {
       message: 'Education is not just about academics but about shaping character and instilling values that help students become better human beings and contribute positively to society.',
     },
   },
-  
+
   // Departments
   departments: {
     rifleShooting: {
@@ -98,7 +98,7 @@ export default {
       additionalInfo: 'Our hostels focus on creating a home-like environment while maintaining discipline and academic focus.',
     },
   },
-  
+
   // Gallery
   gallery: {
     title: 'School Gallery',
@@ -107,10 +107,11 @@ export default {
       assemblies: 'Assemblies',
       staff: 'Staff',
       campus: 'Campus',
+      function: "Function"
     },
     loadMore: 'Load More',
   },
-  
+
   // Contact
   contact: {
     title: 'Contact Us',
@@ -142,7 +143,7 @@ export default {
     },
     map: 'Find Us on Map',
   },
-  
+
   // Common
   common: {
     readMore: 'Read More',
@@ -154,7 +155,7 @@ export default {
     darkMode: 'Dark Mode',
     lightMode: 'Light Mode',
   },
-  
+
   // Footer
   footer: {
     about: 'About the School',

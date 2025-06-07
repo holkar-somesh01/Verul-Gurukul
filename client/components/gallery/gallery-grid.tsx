@@ -102,7 +102,7 @@ import { fadeIn, staggerContainer, imageHover } from '@/lib/utils/animations';
 export const GalleryGrid = () => {
   const { t } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-
+  
   const filteredImages = selectedCategory
     ? GALLERY_IMAGES.filter(image => image.category === selectedCategory)
     : GALLERY_IMAGES;
@@ -110,6 +110,7 @@ export const GalleryGrid = () => {
   return (
     <div className="py-16 bg-gradient-to-br from-orange-50 via-yellow-50 to-white min-h-screen">
       <div className="container mx-auto px-4">
+
         {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
@@ -122,6 +123,9 @@ export const GalleryGrid = () => {
 
         {/* Filters */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
+
+        <div className="flex flex-wrap justify-center gap-2 mb-8">
+
           <Button
             variant={selectedCategory === null ? 'default' : 'outline'}
             onClick={() => setSelectedCategory(null)}
@@ -142,6 +146,8 @@ export const GalleryGrid = () => {
         </div>
 
         {/* Image Grid */}
+
+
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -170,15 +176,21 @@ export const GalleryGrid = () => {
           ))}
         </motion.div>
 
+
         {/* Load More Button */}
         <div className="mt-12 text-center">
           <Button
             variant="default"
             className="bg-gradient-to-r from-orange-400 to-yellow-300 text-white px-6 py-2 rounded-full shadow hover:shadow-xl transition-all"
           >
+
+        {/* Load More Button (for demonstration) */}
+        {/* <div className="mt-10 text-center">
+          <Button variant="outline">
+
             {t('gallery.loadMore')}
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -49,16 +49,18 @@ export const AboutHero = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="relative h-[60vh] md:h-[70vh] overflow-hidden bg-gray-50">
-      {/* Background Image with subtle overlay */}
+    <section className="relative h-[40vh] md:h-[50vh] overflow-hidden bg-gray-900">
+      {/* Background Image */}
       <div
-        className="absolute inset-0 z-0 bg-cover bg-center filter brightness-90"
-        style={{ backgroundImage: `url(${students.src})` }}
+        className="absolute inset-0 z-0 bg-cover bg-center opacity-40"
+        style={{ backgroundImage: `url('https://res.cloudinary.com/dmolheokh/image/upload/v1749202581/MadhyamikGurukul_etqdhw.jpg')` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/10 z-10" />
+
+      {/* Dark Overlay */}
+      {/* <div className="absolute inset-0 bg-black/50 z-10" /> */}
 
       {/* Content */}
-      <div className="relative z-20 container mx-auto px-6 h-full flex flex-col justify-center items-center text-center max-w-4xl">
+      <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
         <motion.h1
           variants={fadeIn('up')}
           initial="hidden"

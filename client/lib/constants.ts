@@ -65,32 +65,48 @@ export const CONTACT_INFO = {
   },
 };
 
-export const GALLERY_CATEGORIES = ['events', 'assemblies', 'staff', 'campus'];
+export const GALLERY_CATEGORIES = ['events', 'assemblies', 'staff', 'campus', 'function'];
 
 export const GALLERY_IMAGES = [
   {
     id: 1,
     src: school.src,
+    src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199369/Assembely_y9vimb.jpg',
     alt: 'School Assembly',
     category: 'assemblies'
   },
   {
     id: 2,
     src: building2.src,
+    src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199332/school-building_ff46sk.jpg',
     alt: 'School Building',
     category: 'campus'
   },
   {
     id: 3,
     src: rifel.src,
+    src: "https://res.cloudinary.com/dmolheokh/image/upload/v1749199279/Rifile-shooting_ir2hy8.jpg",
     alt: 'Rifle Shooting Training',
     category: 'events'
   },
   {
     id: 4,
     src: staff.src,
+    src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199168/Sttaf_m9lyww.jpg',
     alt: 'School Staff',
     category: 'staff'
+  },
+  {
+    id: 5,
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaXPLA47a-bfeO1d_mGpR45eaElSff2aCz7w&s',
+    alt: 'Program',
+    category: 'function'
+  },
+  {
+    id: 6,
+    src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749201060/program_niwrhz.jpg',
+    alt: 'Program',
+    category: 'function'
   }
 ];
 

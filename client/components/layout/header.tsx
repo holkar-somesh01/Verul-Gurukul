@@ -42,12 +42,12 @@ export const Header = () => {
     <header
       className={cn(
         'fixed top-0 w-full z-50 transition-all duration-300',
+        "bg-cover bg-center",
         isScrolled
           ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-md py-2'
           : 'bg-transparent py-4'
       )}
-    >
-      <div className="container mx-auto px-4">
+    >      <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
