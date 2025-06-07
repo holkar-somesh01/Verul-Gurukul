@@ -8,7 +8,7 @@ import { SectionHeading } from '../ui/section-heading';
 
 export const AchievementsSection = () => {
   const { t } = useLanguage();
-  
+
   return (
     <section className="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4">
@@ -18,11 +18,11 @@ export const AchievementsSection = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.25 }}
         >
-          <SectionHeading 
+          <SectionHeading
             title={t('home.achievements.title')}
             subtitle="Our school has achieved numerous milestones over the years."
           />
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {ACHIEVEMENTS.map((achievement, index) => (
               <motion.div
@@ -32,7 +32,7 @@ export const AchievementsSection = () => {
                 initial="rest"
                 className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm"
               >
-                <motion.div 
+                <motion.div
                   variants={cardHover}
                   className="h-full flex flex-col items-center text-center"
                 >

@@ -10,24 +10,24 @@ interface DepartmentHeroProps {
   descriptionKey: string;
 }
 
-export const DepartmentHero = ({ 
-  imageUrl, 
-  titleKey, 
-  descriptionKey 
+export const DepartmentHero = ({
+  imageUrl,
+  titleKey,
+  descriptionKey
 }: DepartmentHeroProps) => {
   const { t } = useLanguage();
 
   return (
     <section className="relative h-[60vh] overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 z-0 bg-cover bg-center"
         style={{ backgroundImage: `url('${imageUrl}')` }}
       />
-      
+
       {/* Dark Overlay with Gradient */}
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70 z-10" />
-      
+
       {/* Content */}
       <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-end pb-16">
         <motion.div
