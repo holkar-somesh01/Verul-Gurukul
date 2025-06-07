@@ -1,4 +1,8 @@
 import { GraduationCap, Home, Info, Library, Mail, MapPin, Phone, School } from 'lucide-react';
+import school from '../../client/app/assets/school-img.jpg';
+import building2 from '../../client/app/assets/building2-img.jpg';
+import rifel from '../../client/app/assets/rifel.jpg';
+import staff from '../../client/app/assets/staff.jpg';
 
 export const SITE_CONFIG = {
   name: 'Shree Sant Janardhan Swami School',
@@ -9,40 +13,40 @@ export const SITE_CONFIG = {
 }
 
 export const NAVIGATION_LINKS = [
-  { 
+  {
     key: 'home',
     href: '/',
     icon: Home
   },
-  { 
+  {
     key: 'about',
     href: '/about',
-    icon: Info 
+    icon: Info
   },
-  { 
+  {
     key: 'departments',
     href: '/departments',
     icon: School,
     children: [
-      { 
+      {
         key: 'rifleShooting',
         href: '/departments/rifle-shooting',
       },
-      { 
+      {
         key: 'hostel',
         href: '/departments/hostel',
       },
     ]
   },
-  { 
+  {
     key: 'gallery',
     href: '/gallery',
-    icon: Library 
+    icon: Library
   },
-  { 
+  {
     key: 'contact',
     href: '/contact',
-    icon: Mail 
+    icon: Mail
   },
 ];
 
@@ -66,25 +70,25 @@ export const GALLERY_CATEGORIES = ['events', 'assemblies', 'staff', 'campus'];
 export const GALLERY_IMAGES = [
   {
     id: 1,
-    src: '/images/Assembly02.jpg',
+    src: school.src,
     alt: 'School Assembly',
     category: 'assemblies'
   },
   {
     id: 2,
-    src: '/images/MadhyamikGurukul.jpg',
+    src: building2.src,
     alt: 'School Building',
     category: 'campus'
   },
   {
     id: 3,
-    src: '/images/RifileShooting.jpg',
+    src: rifel.src,
     alt: 'Rifle Shooting Training',
     category: 'events'
   },
   {
     id: 4,
-    src: '/images/Sttaf.jpg',
+    src: staff.src,
     alt: 'School Staff',
     category: 'staff'
   }

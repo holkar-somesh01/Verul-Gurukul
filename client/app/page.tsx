@@ -10,12 +10,12 @@ import { FacilitiesSection } from '@/components/home/facilities-section';
 
 export default function Home() {
   const { t } = useLanguage();
-  
+
   // Set page title
   useEffect(() => {
     document.title = t('home.hero.title');
   }, [t]);
-  
+
   return (
     <MotionWrapper>
       <HeroSection />
