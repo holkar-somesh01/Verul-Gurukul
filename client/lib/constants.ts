@@ -1,4 +1,8 @@
 import { GraduationCap, Home, Info, Library, Mail, MapPin, Phone, School } from 'lucide-react';
+import school from '../../client/app/assets/school-img.jpg';
+import building2 from '../../client/app/assets/building2-img.jpg';
+import rifel from '../../client/app/assets/rifel.jpg';
+import staff from '../../client/app/assets/staff.jpg';
 
 export const SITE_CONFIG = {
   name: 'Shree Sant Janardhan Swami School',
@@ -66,24 +70,28 @@ export const GALLERY_CATEGORIES = ['events', 'assemblies', 'staff', 'campus', 'f
 export const GALLERY_IMAGES = [
   {
     id: 1,
+    src: school.src,
     src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199369/Assembely_y9vimb.jpg',
     alt: 'School Assembly',
     category: 'assemblies'
   },
   {
     id: 2,
+    src: building2.src,
     src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199332/school-building_ff46sk.jpg',
     alt: 'School Building',
     category: 'campus'
   },
   {
     id: 3,
+    src: rifel.src,
     src: "https://res.cloudinary.com/dmolheokh/image/upload/v1749199279/Rifile-shooting_ir2hy8.jpg",
     alt: 'Rifle Shooting Training',
     category: 'events'
   },
   {
     id: 4,
+    src: staff.src,
     src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199168/Sttaf_m9lyww.jpg',
     alt: 'School Staff',
     category: 'staff'
