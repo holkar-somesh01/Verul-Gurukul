@@ -13,6 +13,22 @@ export const HeroSection = () => {
   const { t } = useLanguage();
   const [offset, setOffset] = useState(0);
 
+  const images = [
+    'https://res.cloudinary.com/dmolheokh/image/upload/v1749202581/MadhyamikGurukul_etqdhw.jpg',
+    'https://res.cloudinary.com/dmolheokh/image/upload/v1749278648/hostelMain_t0yyt8.jpg',
+    'https://res.cloudinary.com/dmolheokh/image/upload/v1749199168/Sttaf_m9lyww.jpg'
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex(prev => (prev + 1) % images.length);
+    }, 1000); // 1000ms = 1 second
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       setOffset(window.scrollY);
@@ -29,12 +45,11 @@ export const HeroSection = () => {
     <section className="relative h-screen overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       {/* Parallax Background */}
       <div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 transition-all duration-500"
         style={{
-          backgroundImage: `url('https://res.cloudinary.com/dmolheokh/image/upload/v1749202581/MadhyamikGurukul_etqdhw.jpg')`,
+          backgroundImage: `url(${images[currentIndex]})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          // transform: `translateY(${offset * 0.5}px)`,
         }}
       />
 
@@ -62,19 +77,22 @@ export const HeroSection = () => {
         >
           {t('home.hero.subtitle')}
         </motion.p>
-
         <motion.div
           variants={fadeIn('up')}
           initial="hidden"
           animate="visible"
           custom={0.4}
         >
-          <Button asChild className="text-base" size="lg">
-            <Link href="/about" className="group">
+          <Button
+            asChild
+            className="bg-gradient-to-r from-orange-500 to-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:from-yellow-400 hover:to-orange-500 transition-all duration-300 shadow-md"
+          >
+            <Link href="/about" className="flex items-center group">
               {t('home.hero.cta')}
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-2" />
             </Link>
           </Button>
+
         </motion.div>
       </div>
 
@@ -94,4 +112,4 @@ export const HeroSection = () => {
       </motion.div>
     </section>
   );
-};
+}

@@ -163,6 +163,6 @@ export default {
     quickLinks: 'Quick Links',
     contact: 'Contact Us',
     copyright: '© 2025 Shree Sant Janardhan Swami School. All rights reserved.',
-    designedBy: 'Designed with ❤️',
+    designedBy: 'Designed with Yug Nanayk Tech',
   },
 };
