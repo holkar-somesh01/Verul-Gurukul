@@ -89,7 +89,7 @@ export default {
       description: 'Our school provides comfortable and safe hostel accommodation for students coming from distant places.',
       features: {
         title: 'Features',
-        item1: 'Separate hostels for boys and girls',
+        item1: 'Separate hostels for boys.',
         item2: 'Nutritious meals',
         item3: '24-hour supervision',
         item4: 'Study hours with teacher assistance',
@@ -123,6 +123,7 @@ export default {
       submit: 'Send Message',
       success: 'Message sent successfully!',
       error: 'An error occurred. Please try again.',
+      sendAnother: "Send Another Message"
     },
     info: {
       title: 'Contact Information',
