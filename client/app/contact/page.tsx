@@ -12,21 +12,21 @@ import { fadeIn, staggerContainer } from '@/lib/utils/animations';
 
 export default function ContactPage() {
   const { t } = useLanguage();
-  
+
   // Set page title
   useEffect(() => {
     document.title = `${t('contact.title')} | ${t('home.hero.title')}`;
   }, [t]);
-  
+
   return (
     <MotionWrapper>
       <section className="pt-32 pb-16 md:pt-40 md:pb-24">
         <div className="container mx-auto px-4">
-          <SectionHeading 
+          <SectionHeading
             title={t('contact.title')}
             subtitle="Get in touch with us for any queries or information"
           />
-          
+
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -38,12 +38,12 @@ export default function ContactPage() {
             <motion.div variants={fadeIn('right')}>
               <ContactForm />
             </motion.div>
-            
+
             {/* Contact Information & Map */}
             <motion.div variants={fadeIn('left')} className="space-y-8">
               <div className="bg-white dark:bg-gray-900 rounded-lg shadow-sm p-6 lg:p-8">
                 <h3 className="text-xl font-semibold mb-6">{t('contact.info.title')}</h3>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <CONTACT_INFO.address.icon className="h-5 w-5 text-primary mt-1 mr-3" />
@@ -56,7 +56,7 @@ export default function ContactPage() {
                       </address>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <CONTACT_INFO.phone.icon className="h-5 w-5 text-primary mt-1 mr-3" />
                     <div>
@@ -68,7 +68,7 @@ export default function ContactPage() {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <CONTACT_INFO.email.icon className="h-5 w-5 text-primary mt-1 mr-3" />
                     <div>
@@ -82,7 +82,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
-              
+
               <div>
                 <h3 className="text-xl font-semibold mb-4">{t('contact.map')}</h3>
                 <ContactMap />

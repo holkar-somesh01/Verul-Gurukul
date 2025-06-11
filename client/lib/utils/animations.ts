@@ -36,11 +36,11 @@ export const staggerContainer: Variants = {
 // Hover scale animation
 export const scaleOnHover: Variants = {
   initial: { scale: 1 },
-  hover: { 
+  hover: {
     scale: 1.05,
-    transition: { 
-      type: "spring", 
-      stiffness: 300 
+    transition: {
+      type: "spring",
+      stiffness: 300
     }
   },
 };
@@ -71,16 +71,16 @@ export const pageTransition: Variants = {
 
 // Image hover animation
 export const imageHover: Variants = {
-  rest: { 
+  rest: {
     scale: 1,
-    transition: { 
+    transition: {
       duration: 0.5,
       ease: "easeInOut"
     }
   },
-  hover: { 
+  hover: {
     scale: 1.1,
-    transition: { 
+    transition: {
       duration: 0.4,
       ease: "easeOut"
     }
@@ -89,17 +89,17 @@ export const imageHover: Variants = {
 
 // Card hover effect
 export const cardHover: Variants = {
-  rest: { 
+  rest: {
     y: 0,
     boxShadow: "0px 0px 0px rgba(0,0,0,0.1)",
   },
-  hover: { 
+  hover: {
     y: -8,
     boxShadow: "0px 15px 25px rgba(0,0,0,0.06)",
-    transition: { 
-      type: "spring", 
-      stiffness: 400, 
-      damping: 15 
+    transition: {
+      type: "spring",
+      stiffness: 400,
+      damping: 15
     }
   }
 };

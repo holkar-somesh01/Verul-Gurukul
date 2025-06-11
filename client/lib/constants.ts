@@ -71,28 +71,28 @@ export const GALLERY_IMAGES = [
   {
     id: 1,
     src: school.src,
-    src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199369/Assembely_y9vimb.jpg',
+    // src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199369/Assembely_y9vimb.jpg',
     alt: 'School Assembly',
     category: 'assemblies'
   },
   {
     id: 2,
     src: building2.src,
-    src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199332/school-building_ff46sk.jpg',
+    // src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199332/school-building_ff46sk.jpg',
     alt: 'School Building',
     category: 'campus'
   },
   {
     id: 3,
     src: rifel.src,
-    src: "https://res.cloudinary.com/dmolheokh/image/upload/v1749199279/Rifile-shooting_ir2hy8.jpg",
+    // src: "https://res.cloudinary.com/dmolheokh/image/upload/v1749199279/Rifile-shooting_ir2hy8.jpg",
     alt: 'Rifle Shooting Training',
     category: 'events'
   },
   {
     id: 4,
     src: staff.src,
-    src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199168/Sttaf_m9lyww.jpg',
+    // src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199168/Sttaf_m9lyww.jpg',
     alt: 'School Staff',
     category: 'staff'
   },

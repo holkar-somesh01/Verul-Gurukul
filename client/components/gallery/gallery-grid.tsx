@@ -102,7 +102,7 @@ import { fadeIn, staggerContainer, imageHover } from '@/lib/utils/animations';
 export const GalleryGrid = () => {
   const { t } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  
+
   const filteredImages = selectedCategory
     ? GALLERY_IMAGES.filter(image => image.category === selectedCategory)
     : GALLERY_IMAGES;
@@ -124,73 +124,76 @@ export const GalleryGrid = () => {
         {/* Filters */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
 
-        <div className="flex flex-wrap justify-center gap-2 mb-8">
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
 
-          <Button
-            variant={selectedCategory === null ? 'default' : 'outline'}
-            onClick={() => setSelectedCategory(null)}
-            className="rounded-full px-6 py-2 font-medium shadow-md hover:shadow-lg"
-          >
-            All
-          </Button>
-          {GALLERY_CATEGORIES.map(category => (
             <Button
-              key={category}
-              variant={selectedCategory === category ? 'default' : 'outline'}
-              onClick={() => setSelectedCategory(category)}
+              variant={selectedCategory === null ? 'default' : 'outline'}
+              onClick={() => setSelectedCategory(null)}
               className="rounded-full px-6 py-2 font-medium shadow-md hover:shadow-lg"
             >
-              {t(`gallery.categories.${category}`)}
+              All
             </Button>
-          ))}
-        </div>
+            {GALLERY_CATEGORIES.map(category => (
+              <Button
+                key={category}
+                variant={selectedCategory === category ? 'default' : 'outline'}
+                onClick={() => setSelectedCategory(category)}
+                className="rounded-full px-6 py-2 font-medium shadow-md hover:shadow-lg"
+              >
+                {t(`gallery.categories.${category}`)}
+              </Button>
+            ))}
+          </div>
 
-        {/* Image Grid */}
-
-
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          {filteredImages.map((image) => (
-            <motion.div
-              key={image.id}
-              variants={fadeIn('up', 0.1 * image.id)}
-              whileHover="hover"
-              initial="rest"
-              className="relative overflow-hidden rounded-2xl shadow-lg group cursor-pointer transition-all duration-300 hover:scale-[1.02]"
-            >
-              <motion.img
-                variants={imageHover}
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-full object-cover transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
-                <p className="text-white font-semibold text-xl tracking-wide">{image.alt}</p>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+          {/* Image Grid */}
 
 
-        {/* Load More Button */}
-        <div className="mt-12 text-center">
-          <Button
-            variant="default"
-            className="bg-gradient-to-r from-orange-400 to-yellow-300 text-white px-6 py-2 rounded-full shadow hover:shadow-xl transition-all"
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
           >
+            {filteredImages.map((image) => (
+              <motion.div
+                key={image.id}
+                variants={fadeIn('up', 0.1 * image.id)}
+                whileHover="hover"
+                initial="rest"
+                className="relative overflow-hidden rounded-2xl shadow-lg group cursor-pointer transition-all duration-300 hover:scale-[1.02]"
+              >
+                <motion.img
+                  variants={imageHover}
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                  <p className="text-white font-semibold text-xl tracking-wide">{image.alt}</p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
 
-        {/* Load More Button (for demonstration) */}
-        {/* <div className="mt-10 text-center">
+
+          {/* Load More Button */}
+          <div className="mt-12 text-center">
+            <Button
+              variant="default"
+              className="bg-gradient-to-r from-orange-400 to-yellow-300 text-white px-6 py-2 rounded-full shadow hover:shadow-xl transition-all"
+            >
+              {t('gallery.loadMore')}
+            </Button>
+            {/* Load More Button (for demonstration) */}
+            {/* <div className="mt-10 text-center">
           <Button variant="outline">
 
             {t('gallery.loadMore')}
           </Button>
         </div> */}
+          </div>
+        </div>
       </div>
     </div>
   );

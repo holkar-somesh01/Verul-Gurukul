@@ -128,7 +128,6 @@ import { fadeIn } from '@/lib/utils/animations';
 export const HeroSection = () => {
   const { t } = useLanguage();
   const [offset, setOffset] = useState(0);
-
   const images = [
     'https://res.cloudinary.com/dmolheokh/image/upload/v1749202581/MadhyamikGurukul_etqdhw.jpg',
     'https://res.cloudinary.com/dmolheokh/image/upload/v1749278648/hostelMain_t0yyt8.jpg',
@@ -161,20 +160,11 @@ export const HeroSection = () => {
     <section className="relative h-screen overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       {/* Parallax Background */}
       <div
-
         className="absolute inset-0 z-0 transition-all duration-500"
         style={{
           backgroundImage: `url(${images[currentIndex]})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url('https://res.cloudinary.com/dmolheokh/image/upload/v1749202581/MadhyamikGurukul_etqdhw.jpg')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          // transform: `translateY(${offset * 0.5}px)`,
-
         }}
       />
 
@@ -202,7 +192,6 @@ export const HeroSection = () => {
         >
           {t('home.hero.subtitle')}
         </motion.p>
-
         <motion.div
           variants={fadeIn('up')}
           initial="hidden"
@@ -218,12 +207,11 @@ export const HeroSection = () => {
               <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-2" />
             </Link>
           </Button>
-
         </motion.div>
       </div>
 
       {/* Animated scroll indicator */}
-      <motion.div
+      {/* <motion.div
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         animate={{ y: [0, 12, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
@@ -235,7 +223,8 @@ export const HeroSection = () => {
             transition={{ duration: 1.5, repeat: Infinity }}
           />
         </div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }
+

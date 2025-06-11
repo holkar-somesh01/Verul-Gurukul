@@ -40,7 +40,7 @@ export const Footer = () => {
             <ul className="space-y-2">
               {QUICK_LINKS.map((link) => (
                 <li key={link.href}>
-                  <Link 
+                  <Link
                     href={link.href}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
@@ -98,8 +98,8 @@ export const Footer = () => {
           "mt-12 pt-6 border-t border-gray-200 dark:border-gray-800",
           "text-center text-sm text-muted-foreground"
         )}>
-          <p>{t('footer.copyright')}</p>
-          <p className="mt-1">{t('footer.designedBy')}</p>
+          <p className='text-orange-400'>{t('footer.copyright')}</p>
+          <p className="mt-1 text-orange-400">{t('footer.designedBy')}.</p>
         </div>
       </div>
     </footer>

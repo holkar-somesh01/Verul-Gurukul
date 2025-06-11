@@ -70,7 +70,7 @@ import { useLanguage } from '@/hooks/use-language';
 import { fadeIn, staggerContainer } from '@/lib/utils/animations';
 import { SectionHeading } from '@/components/ui/section-heading';
 import { QuoteIcon } from 'lucide-react';
-
+import babajiPhoto from '../../app/assets/babaji.jpg'
 export const FounderSection = () => {
   const { t } = useLanguage();
 
@@ -115,7 +115,7 @@ export const FounderSection = () => {
           >
             <div className="rounded-full overflow-hidden border-4 border-orange-400 dark:border-orange-600 shadow-xl w-36 h-36 md:w-40 md:h-40">
               <img
-                src="https://images.pexels.com/photos/5212320/pexels-photo-5212320.jpeg"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-vzEvmdoJciL8qwOFTMGdmPOidTRkxrpUrA&s"
                 alt="Founder"
                 className="w-full h-full object-cover"
                 loading="lazy"

@@ -102,9 +102,7 @@ export const WelcomeSection = () => {
     //     </motion.div>
     //   </div>
     // </section>
-    <section className="py-20 md:py-28 bg-gradient-to-br from-white via-orange-50 to-yellow-100 text-gray-800">
-
-  return (
+    // <section className="py-20 md:py-28 bg-gradient-to-br from-white via-orange-50 to-yellow-100 text-gray-800">
     <section className="py-16 md:py-24 bg-white overflow-hidden dark:bg-gray-900">
 
       <div className="container mx-auto px-4">
@@ -145,16 +143,16 @@ export const WelcomeSection = () => {
                 </motion.div>
               </AnimatePresence>
 
-            <motion.div
-              variants={fadeIn('right')}
-              className="relative rounded-lg overflow-hidden aspect-video"
-            >
-              <img
-                src="/images/MadhyamikGurukul.jpg"
-                alt="School Building"
-                className="w-full h-full object-cover"
-              />
-            </motion.div>
+              <motion.div
+                variants={fadeIn('right')}
+                className="relative rounded-lg overflow-hidden aspect-video"
+              >
+                <img
+                  src="/images/MadhyamikGurukul.jpg"
+                  alt="School Building"
+                  className="w-full h-full object-cover"
+                />
+              </motion.div>
 
               {/* Dots */}
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
@@ -179,7 +177,7 @@ export const WelcomeSection = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-                {['item1', 'item2', 'item3', 'item4', "item5"].map((item, index) => (
+                {/* {['item1', 'item2', 'item3', 'item4', "item5"].map((item, index) => ( */}
 
                 {['item1', 'item2', 'item3', 'item4'].map((item, index) => (
                   <motion.div
@@ -200,12 +198,5 @@ export const WelcomeSection = () => {
       </div>
     </section>
 
-  );
-};
-
-
-
-
-
-
-
+  )
+}
