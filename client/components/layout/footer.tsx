@@ -79,16 +79,16 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">School Hours</h3>
             <ul className="space-y-2">
               <li className="flex justify-between">
-                <span className="text-muted-foreground">Monday - Friday:</span>
-                <span className="font-medium">8:00 AM - 4:30 PM</span>
+                <span className="text-muted-foreground">Monday-Friday:</span>
+                <span className="font-medium text-green-500">10:00 AM - 4:30 PM</span>
               </li>
               <li className="flex justify-between">
                 <span className="text-muted-foreground">Saturday:</span>
-                <span className="font-medium">8:00 AM - 12:30 PM</span>
+                <span className="font-medium text-orange-300">10:00 AM - 12:30 PM</span>
               </li>
               <li className="flex justify-between">
                 <span className="text-muted-foreground">Sunday:</span>
-                <span className="font-medium">Closed</span>
+                <span className="font-medium text-red-500">Closed</span>
               </li>
             </ul>
           </div>

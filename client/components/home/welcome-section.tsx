@@ -202,6 +202,17 @@ export const WelcomeSection = () => {
                 </motion.div>
               </AnimatePresence>
 
+              <motion.div
+                variants={fadeIn('right')}
+                className="relative rounded-lg overflow-hidden aspect-video"
+              >
+                {/* <img
+                  src="/images/MadhyamikGurukul.jpg"
+                  alt=""
+                  className="w-full h-full object-cover"
+                /> */}
+              </motion.div>
+
               {/* Dots */}
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
                 {images.map((_, idx) => (
