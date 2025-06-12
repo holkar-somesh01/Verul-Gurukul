@@ -150,7 +150,7 @@ const facilities = [
     href: '/about#facilities',
     gradientFrom: 'from-blue-400',
     gradientTo: 'to-blue-600',
-    path: "/gallery-welcomePage"
+    path: "/gallery-welcome"
   },
   {
     key: 'item2',
@@ -158,7 +158,7 @@ const facilities = [
     href: '/about#facilities',
     gradientFrom: 'from-green-400',
     gradientTo: 'to-green-600',
-    path: "/gallery-welcomePage"
+    path: "/gallery-lab"
   },
   {
     key: 'item3',
@@ -166,7 +166,7 @@ const facilities = [
     href: '/about#facilities',
     gradientFrom: 'from-purple-400',
     gradientTo: 'to-purple-600',
-    path: "/gallery-welcomePage"
+    path: "/gallery-computer"
   },
   {
     key: 'item4',
@@ -174,7 +174,7 @@ const facilities = [
     href: '/about#facilities',
     gradientFrom: 'from-yellow-400',
     gradientTo: 'to-yellow-600',
-    path: "/gallery-welcomePage"
+    path: "/gallery-ground"
   },
   {
     key: 'item5',
@@ -182,7 +182,7 @@ const facilities = [
     href: '/departments/rifle-shooting',
     gradientFrom: 'from-red-400',
     gradientTo: 'to-red-600',
-    path: "/gallery-welcomePage"
+    path: "/gallery-rifle"
   },
   {
     key: 'item6',
@@ -190,7 +190,7 @@ const facilities = [
     href: '/departments/hostel',
     gradientFrom: 'from-indigo-400',
     gradientTo: 'to-indigo-600',
-    path: "/gallery-welcomePage"
+    path: "/gallery-hostel"
   },
 ];
 
@@ -239,7 +239,7 @@ export const FacilitiesSection = () => {
                     style={{ zIndex: 0 }}
                   />
 
-                  <Link href={facility.href} className="relative block z-10">
+                  <Link href={facility.path} className="relative block z-10">
                     <motion.div
                       className={cn(
                         "rounded-xl bg-white/70 dark:bg-gray-900/70 backdrop-blur-md border border-transparent dark:border-gray-700",

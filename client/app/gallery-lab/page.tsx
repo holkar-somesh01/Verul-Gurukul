@@ -1,9 +1,9 @@
-import LabsGallery from '@/components/gallery/Laboratory'
+import ComputerRoomsGallery from '@/components/gallery/computerLab'
 import React from 'react'
 
 const page = () => {
     return <>
-        <LabsGallery />
+        <ComputerRoomsGallery />
     </>
 }
 
