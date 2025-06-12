@@ -147,11 +147,11 @@ export const WelcomeSection = () => {
                 variants={fadeIn('right')}
                 className="relative rounded-lg overflow-hidden aspect-video"
               >
-                <img
+                {/* <img
                   src="/images/MadhyamikGurukul.jpg"
-                  alt="School Building"
+                  alt=""
                   className="w-full h-full object-cover"
-                />
+                /> */}
               </motion.div>
 
               {/* Dots */}

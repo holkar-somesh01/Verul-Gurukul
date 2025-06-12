@@ -8,21 +8,20 @@ import { GalleryGrid } from '@/components/gallery/gallery-grid';
 
 export default function GalleryPage() {
   const { t } = useLanguage();
-  
+
   // Set page title
   useEffect(() => {
     document.title = `${t('gallery.title')} | ${t('home.hero.title')}`;
   }, [t]);
-  
+
   return (
     <MotionWrapper>
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24">
+      <section className="pt-32 pb-16 md:pt-0 md:pb-20">
         <div className="container mx-auto px-4">
-          <SectionHeading 
+          {/* <SectionHeading
             title={t('gallery.title')}
-            subtitle="Explore images from our school events, activities, and facilities"
-          />
-          
+            subtitle={t('gallery.subtitle')}
+          /> */}
           <GalleryGrid />
         </div>
       </section>

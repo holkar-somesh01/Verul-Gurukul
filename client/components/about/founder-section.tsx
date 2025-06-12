@@ -100,6 +100,7 @@ export const FounderSection = () => {
             <blockquote className="relative z-10 pl-8 md:pl-12">
               <p className="italic text-gray-700 dark:text-gray-300 text-lg md:text-xl leading-relaxed mb-6">
                 "{t('about.founder.message')}"
+
               </p>
               <footer className="text-right">
                 <cite className="not-italic font-semibold text-orange-600 dark:text-orange-400 text-base md:text-lg">
