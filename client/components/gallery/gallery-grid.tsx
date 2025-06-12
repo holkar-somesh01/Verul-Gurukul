@@ -112,15 +112,19 @@ export const GalleryGrid = () => {
       <div className="container mx-auto px-4">
 
         {/* Heading */}
-        <motion.h2
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center text-3xl md:text-4xl font-bold text-orange-600 mb-10"
-        >
-          {t('gallery.title')}
-        </motion.h2>
-
+        <div>
+          <motion.h2
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center text-3xl md:text-4xl font-bold text-orange-600 mb-10"
+          >
+            {t('gallery.title')}
+          </motion.h2>
+          <p className="mt-4 text-center text-lg text-muted-foreground max-w-3xl mx-auto">
+            {t('gallery.subtitle')}
+          </p>
+        </div>
         {/* Filters */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
 
@@ -131,7 +135,7 @@ export const GalleryGrid = () => {
               onClick={() => setSelectedCategory(null)}
               className="rounded-full px-6 py-2 font-medium shadow-md hover:shadow-lg"
             >
-              All
+              {t(`gallery.categories.all`)}
             </Button>
             {GALLERY_CATEGORIES.map(category => (
               <Button
