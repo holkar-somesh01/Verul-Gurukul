@@ -157,7 +157,12 @@ export const WelcomeSection = () => {
 
     return () => clearInterval(interval);
   }, []);
-
+  let routes = [
+    "/gallery-welcome",
+    "/gallery-computer",
+    "/gallery-lab",
+    "/gallery-ground",
+  ]
   return (
     <section className="py-16 md:py-24 bg-white overflow-hidden dark:bg-gray-900">
       <div className="container mx-auto px-4">
@@ -226,7 +231,7 @@ export const WelcomeSection = () => {
                     key={item}
                     variants={fadeIn('up', 0.1 * index)}
                     className="flex items-start space-x-3 cursor-pointer hover:scale-105 transition-all"
-                    onClick={() => router.push(`/${item}`)}
+                    onClick={() => router.push(`${routes[index]}`)}
                   >
                     <div className="w-8 h-8 rounded-full bg-orange-400 text-white flex items-center justify-center text-sm font-bold shadow-sm">
                       {index + 1}
