@@ -203,6 +203,8 @@ export const WelcomeSection = () => {
                   />
                 </motion.div>
               </AnimatePresence>
+
+
               <motion.div
                 variants={fadeIn('right')}
                 className="relative rounded-lg overflow-hidden aspect-video"
