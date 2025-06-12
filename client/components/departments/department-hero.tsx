@@ -130,11 +130,13 @@ const images = [
 interface DepartmentHeroProps {
   titleKey: string;
   descriptionKey: string;
+  imageUrl: String
 }
 
 export const DepartmentHero = ({
   titleKey,
   descriptionKey,
+  imageUrl
 }: DepartmentHeroProps) => {
   const { t } = useLanguage();
   const [current, setCurrent] = useState(0);

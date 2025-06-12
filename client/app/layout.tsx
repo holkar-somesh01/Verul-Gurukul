@@ -5,6 +5,7 @@ import { Providers } from '@/components/providers';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { SITE_CONFIG } from '@/lib/constants';
+// import ApiProviders from './Provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+        {/* <ApiProviders> */}
         <Providers>
           <div className="flex flex-col min-h-screen">
             <Header />
@@ -30,6 +32,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </Providers>
+        {/* </ApiProviders> */}
       </body>
     </html>
   );

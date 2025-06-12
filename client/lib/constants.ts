@@ -3,6 +3,7 @@ import school from '../../client/app/assets/school-img.jpg';
 import building2 from '../../client/app/assets/building2-img.jpg';
 import rifel from '../../client/app/assets/rifel.jpg';
 import staff from '../../client/app/assets/staff.jpg';
+
 import building3 from '../../client/app/assets/building3.jpg';
 import tradition from '../../client/app/assets/tradition-img.jpg';
 import swami from '../../client/app/assets/swami-img.jpg';
@@ -15,6 +16,29 @@ import hostel from '../../client/app/assets/hostel.jpg';
 import front from '../../client/app/assets/front-img.jpg';
 import ground from '../../client/app/assets/ground-img.jpg';
 import food from '../../client/app/assets/food-img.jpg';
+import Assembly from '../app/assets/Assembly.jpg'
+import Assembly01 from '../app/assets/Assembly01.jpg'
+import Assembly02 from '../app/assets/Assembly02.jpg'
+import AssemblyFN from '../app/assets/AssemblyFN.jpg'
+import AwardFN from '../app/assets/AwardFN.jpg'
+import AwardFn01 from '../app/assets/AwardFn01.jpg'
+import Computer from '../app/assets/Computer.jpg'
+import FN from '../app/assets/FN.jpg'
+import FN01 from '../app/assets/FN01.jpg'
+import FN02 from '../app/assets/FN02.jpg'
+import FN03 from '../app/assets/FN03.jpg'
+import FN04 from '../app/assets/FN04.jpg'
+import FrontSchool from '../app/assets/FrontSchool.jpg'
+import RakhiFN from '../app/assets/RakhiFN.jpg'
+import RifileShoot from '../app/assets/RifileShoot.jpg'
+import ScienceExp from '../app/assets/ScienceExp.jpg'
+import ScienceExp01 from '../app/assets/ScienceExp01.jpg'
+import Teaching from '../app/assets/Teaching.jpg'
+import Work from '../app/assets/Work.jpg'
+import Work01 from '../app/assets/Work01.jpg'
+import babaji from '../app/assets/babaji.jpg'
+import BookD from '../app/assets/bookD.jpg'
+import buildingImg from '../app/assets/building-img.jpg'
 
 export const SITE_CONFIG = {
   name: 'Shree Sant Janardhan Swami School',
@@ -77,7 +101,7 @@ export const CONTACT_INFO = {
   },
 };
 
-export const GALLERY_CATEGORIES = ['events', 'assemblies', 'staff', 'campus', 'function'];
+export const GALLERY_CATEGORIES = ['events', 'assemblies', 'staff', 'campus',];
 
 export const GALLERY_IMAGES = [
   {
@@ -89,36 +113,37 @@ export const GALLERY_IMAGES = [
   },
   {
     id: 2,
+    src: Assembly.src,
+    // src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199369/Assembely_y9vimb.jpg',
+    alt: 'School Assembly',
+    category: 'assemblies'
+  },
+  {
+    id: 3,
     src: building2.src,
     // src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199332/school-building_ff46sk.jpg',
     alt: 'School Building',
     category: 'campus'
   },
   {
-    id: 3,
+    id: 4,
     src: rifel.src,
     // src: "https://res.cloudinary.com/dmolheokh/image/upload/v1749199279/Rifile-shooting_ir2hy8.jpg",
     alt: 'Rifle Shooting Training',
     category: 'events'
   },
   {
-    id: 4,
+    id: 5,
     src: staff.src,
     // src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199168/Sttaf_m9lyww.jpg',
     alt: 'School Staff',
     category: 'staff'
   },
   {
-    id: 5,
+    id: 6,
     src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaXPLA47a-bfeO1d_mGpR45eaElSff2aCz7w&s',
     alt: 'Program',
-    category: 'function'
-  },
-  {
-    id: 6,
-    src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749201060/program_niwrhz.jpg',
-    alt: 'Program',
-    category: 'function'
+    category: 'events'
   },
   {
     id: 7,
@@ -194,6 +219,38 @@ export const GALLERY_IMAGES = [
     src: food.src,
     alt: 'food',
     category: 'all'
+=======
+    category: 'events'
+  },
+  {
+    id: 8,
+    src: FN.src,
+    alt: 'Program',
+    category: 'events'
+  },
+  {
+    id: 9,
+    src: FN01.src,
+    alt: 'Program',
+    category: 'events'
+  },
+  {
+    id: 10,
+    src: FN02.src,
+    alt: 'Program',
+    category: 'events'
+  },
+  {
+    id: 11,
+    src: FN03.src,
+    alt: 'Program',
+    category: 'events'
+  },
+  {
+    id: 12,
+    src: FN04.src,
+    alt: 'Program',
+    category: 'events'
   },
 ];
 

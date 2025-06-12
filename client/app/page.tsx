@@ -7,6 +7,7 @@ import { HeroSection } from '@/components/home/hero-section';
 import { WelcomeSection } from '@/components/home/welcome-section';
 import { AchievementsSection } from '@/components/home/achievements-section';
 import { FacilitiesSection } from '@/components/home/facilities-section';
+import SpeechPage from './preview/page';
 
 export default function Home() {
   const { t } = useLanguage();
@@ -22,6 +23,7 @@ export default function Home() {
       <WelcomeSection />
       <AchievementsSection />
       <FacilitiesSection />
+      <SpeechPage />
     </MotionWrapper>
   );
 }

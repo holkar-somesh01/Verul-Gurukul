@@ -174,7 +174,7 @@ export default function DepartmentsPage() {
                   </p>
                   <Button
                     asChild
-                    variant="orange"
+                    variant="ghost"
                     className="self-start px-8 py-3 rounded-full font-semibold tracking-wide shadow-md hover:shadow-orange-400 transition"
                   >
                     <Link href="/departments/rifle-shooting">
@@ -214,7 +214,7 @@ export default function DepartmentsPage() {
                   </p>
                   <Button
                     asChild
-                    variant="orange"
+                    // variant="orange"
                     className="self-start px-8 py-3 rounded-full font-semibold tracking-wide shadow-md hover:shadow-orange-400 transition"
                   >
                     <Link href="/departments/hostel">
