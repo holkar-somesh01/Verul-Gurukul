@@ -150,6 +150,7 @@ const facilities = [
     href: '/about#facilities',
     gradientFrom: 'from-blue-400',
     gradientTo: 'to-blue-600',
+    path: "/gallery-welcomePage"
   },
   {
     key: 'item2',
@@ -157,6 +158,7 @@ const facilities = [
     href: '/about#facilities',
     gradientFrom: 'from-green-400',
     gradientTo: 'to-green-600',
+    path: "/gallery-welcomePage"
   },
   {
     key: 'item3',
@@ -164,6 +166,7 @@ const facilities = [
     href: '/about#facilities',
     gradientFrom: 'from-purple-400',
     gradientTo: 'to-purple-600',
+    path: "/gallery-welcomePage"
   },
   {
     key: 'item4',
@@ -171,6 +174,7 @@ const facilities = [
     href: '/about#facilities',
     gradientFrom: 'from-yellow-400',
     gradientTo: 'to-yellow-600',
+    path: "/gallery-welcomePage"
   },
   {
     key: 'item5',
@@ -178,6 +182,7 @@ const facilities = [
     href: '/departments/rifle-shooting',
     gradientFrom: 'from-red-400',
     gradientTo: 'to-red-600',
+    path: "/gallery-welcomePage"
   },
   {
     key: 'item6',
@@ -185,6 +190,7 @@ const facilities = [
     href: '/departments/hostel',
     gradientFrom: 'from-indigo-400',
     gradientTo: 'to-indigo-600',
+    path: "/gallery-welcomePage"
   },
 ];
 
