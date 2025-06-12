@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 
 export default function NotFound() {
   const { t } = useLanguage();
-  
+
   return (
     <div className="min-h-[70vh] flex flex-col items-center justify-center text-center px-4">
       <h1 className="text-6xl font-bold mb-6">404</h1>

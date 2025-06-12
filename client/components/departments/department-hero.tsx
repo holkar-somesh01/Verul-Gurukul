@@ -144,7 +144,7 @@ export const DepartmentHero = ({
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent(prev => (prev + 1) % images.length);
-    }, 6000); // Change slide every 6s
+    }, 6000);
     return () => clearInterval(interval);
   }, []);
 

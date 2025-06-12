@@ -8,12 +8,12 @@ import { FeatureList } from '@/components/departments/feature-list';
 
 export default function RifleShootingPage() {
   const { t } = useLanguage();
-  
+
   // Set page title
   useEffect(() => {
     document.title = `${t('departments.rifleShooting.title')} | ${t('home.hero.title')}`;
   }, [t]);
-  
+
   const features = [
     {
       titleKey: 'departments.rifleShooting.features.title',
@@ -33,15 +33,15 @@ export default function RifleShootingPage() {
       ],
     },
   ];
-  
+
   return (
     <MotionWrapper>
-      <DepartmentHero 
+      <DepartmentHero
         imageUrl="/images/RifileShooting.jpg"
         titleKey="departments.rifleShooting.title"
         descriptionKey="departments.rifleShooting.description"
       />
-      
+
       <FeatureList features={features} />
     </MotionWrapper>
   );
