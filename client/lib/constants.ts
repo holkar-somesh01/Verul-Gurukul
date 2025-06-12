@@ -3,6 +3,19 @@ import school from '../../client/app/assets/school-img.jpg';
 import building2 from '../../client/app/assets/building2-img.jpg';
 import rifel from '../../client/app/assets/rifel.jpg';
 import staff from '../../client/app/assets/staff.jpg';
+
+import building3 from '../../client/app/assets/building3.jpg';
+import tradition from '../../client/app/assets/tradition-img.jpg';
+import swami from '../../client/app/assets/swami-img.jpg';
+import students from '../../client/app/assets/students.jpg';
+import shiv from '../../client/app/assets/shiv-img.jpg';
+import sciencelab from '../../client/app/assets/sciencelab-img.jpg';
+import professor from '../../client/app/assets/professor-img.jpg';
+import lab from '../../client/app/assets/lab-img.jpg';
+import hostel from '../../client/app/assets/hostel.jpg';
+import front from '../../client/app/assets/front-img.jpg';
+import ground from '../../client/app/assets/ground-img.jpg';
+import food from '../../client/app/assets/food-img.jpg';
 import Assembly from '../app/assets/Assembly.jpg'
 import Assembly01 from '../app/assets/Assembly01.jpg'
 import Assembly02 from '../app/assets/Assembly02.jpg'
@@ -134,8 +147,79 @@ export const GALLERY_IMAGES = [
   },
   {
     id: 7,
-    src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749201060/program_niwrhz.jpg',
+    src: building3.src,
+    alt: 'School Assembly',
+    category: 'assemblies'
+  },
+  {
+    id: 8,
+    src: swami.src,
+    alt: 'School Assembly',
+    category: 'assemblies'
+  },
+  {
+    id: 9,
+    src: tradition.src,
     alt: 'Program',
+    category: 'function'
+  },
+  {
+    id: 10,
+    src: students.src,
+    alt: 'Program',
+    category: 'function'
+  },
+  {
+    id: 11,
+    src: shiv.src,
+    alt: 'Program',
+    category: 'function'
+  },
+  {
+    id: 12,
+    src: sciencelab.src,
+    alt: 'sciencelab',
+    category: 'campus'
+  },
+  {
+    id: 13,
+    src: professor.src,
+    // src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199168/Sttaf_m9lyww.jpg',
+    alt: 'School Staff',
+    category: 'staff'
+  },
+  {
+    id: 14,
+    src: lab.src,
+    // src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199168/Sttaf_m9lyww.jpg',
+    alt: 'lab',
+    category: 'campus'
+  },
+  {
+    id: 15,
+    src: hostel.src,
+    // src: 'https://res.cloudinary.com/dmolheokh/image/upload/v1749199168/Sttaf_m9lyww.jpg',
+    alt: 'hostel',
+    category: 'campus'
+  },
+  {
+    id: 16,
+    src: front.src,
+    alt: 'Program',
+    category: 'function'
+  },
+  {
+    id: 17,
+    src: ground.src,
+    alt: 'ground',
+    category: 'campus'
+  },
+  {
+    id: 18,
+    src: food.src,
+    alt: 'food',
+    category: 'all'
+=======
     category: 'events'
   },
   {

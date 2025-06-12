@@ -124,14 +124,21 @@ import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/hooks/use-language';
 import { Button } from '@/components/ui/button';
 import { fadeIn } from '@/lib/utils/animations';
+import staff from '@/app/assets/staff.jpg';
+import hostel from '@/app/assets/hostel.jpg';
+import buildingg from '@/app/assets/building4.jpg';
+import buildinggg from '@/app/assets/building3.jpg';
+import school from '@/app/assets/school-img.jpg';
 
 export const HeroSection = () => {
   const { t } = useLanguage();
   const [offset, setOffset] = useState(0);
   const images = [
-    'https://res.cloudinary.com/dmolheokh/image/upload/v1749202581/MadhyamikGurukul_etqdhw.jpg',
-    'https://res.cloudinary.com/dmolheokh/image/upload/v1749278648/hostelMain_t0yyt8.jpg',
-    'https://res.cloudinary.com/dmolheokh/image/upload/v1749199168/Sttaf_m9lyww.jpg'
+    staff,
+    hostel,
+    buildingg,
+    buildinggg,
+    school
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -139,7 +146,7 @@ export const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex(prev => (prev + 1) % images.length);
-    }, 1000); // 1000ms = 1 second
+    }, 2000); // 1000ms = 1 second
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
@@ -162,14 +169,14 @@ export const HeroSection = () => {
       <div
         className="absolute inset-0 z-0 transition-all duration-500"
         style={{
-          backgroundImage: `url(${images[currentIndex]})`,
+          backgroundImage: `url(${images[currentIndex].src})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 z-10" />
+      {/* <div className="absolute inset-0 z-10" /> */}
 
       {/* Content */}
       <div className="container relative z-20 mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
