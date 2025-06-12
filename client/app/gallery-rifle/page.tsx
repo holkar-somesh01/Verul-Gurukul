@@ -1,9 +1,9 @@
-import LabsGallery from '@/components/gallery/Laboratory'
+import Rifle from '@/components/gallery/Rifles'
 import React from 'react'
 
 const page = () => {
     return <>
-        <LabsGallery />
+        <Rifle />
     </>
 }
 

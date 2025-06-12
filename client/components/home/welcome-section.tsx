@@ -162,6 +162,8 @@ export const WelcomeSection = () => {
     "/gallery-computer",
     "/gallery-lab",
     "/gallery-ground",
+    "/gallery-rifle",
+    "/gallery-hostel",
   ]
   return (
     <section className="py-16 md:py-24 bg-white overflow-hidden dark:bg-gray-900">
@@ -201,6 +203,7 @@ export const WelcomeSection = () => {
                   />
                 </motion.div>
               </AnimatePresence>
+
 
               <motion.div
                 variants={fadeIn('right')}
