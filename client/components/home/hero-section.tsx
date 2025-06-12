@@ -209,21 +209,6 @@ export const HeroSection = () => {
           </Button>
         </motion.div>
       </div>
-
-      {/* Animated scroll indicator */}
-      {/* <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        animate={{ y: [0, 12, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
-        <div className="w-8 h-12 border-2 border-white rounded-full flex justify-center">
-          <motion.div
-            className="w-1.5 h-3 bg-white rounded-full mt-2"
-            animate={{ y: [0, 15, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-          />
-        </div>
-      </motion.div> */}
     </section>
   );
 }
