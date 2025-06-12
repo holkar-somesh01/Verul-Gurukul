@@ -175,10 +175,6 @@ export const HeroSection = () => {
         }}
       />
 
-      {/* Dark Overlay */}
-      {/* <div className="absolute inset-0 z-10" /> */}
-
-      {/* Content */}
       <div className="container relative z-20 mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
         <motion.h1
           className="text-4xl text-orange-600 md:text-6xl font-bold mb-6 max-w-4xl"

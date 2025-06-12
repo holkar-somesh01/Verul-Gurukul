@@ -219,8 +219,7 @@ export const GALLERY_IMAGES = [
     src: food.src,
     alt: 'food',
     category: 'all'
-=======
-    category: 'events'
+    // category: 'events'
   },
   {
     id: 8,
